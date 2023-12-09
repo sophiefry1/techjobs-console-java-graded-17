@@ -124,21 +124,13 @@ public class TechJobs {
             return;
         }
 
-        System.out.println("");
-
         for(int i = 0; i < someJobs.size(); i++) {
-            System.out.println("*****");
+            System.out.println("\n*****");
             for (Map.Entry<String, String> job : someJobs.get(i).entrySet()) {
                 System.out.println(job.getKey() + ": " + job.getValue());
             }
 
             System.out.println("*****");
-
-            boolean isLast = i == someJobs.size() - 1;
-
-            if(!isLast) {
-                System.out.println("");
-            }
         }
     }
 }
